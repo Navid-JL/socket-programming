@@ -20,6 +20,9 @@ public class Server
 
                 string inputData = Encoding.ASCII.GetString(receivedData);
                 string modifiedData = inputData.ToUpper();
+
+                byte[] responseData = Encoding.ASCII.GetBytes(modifiedData);
+                server.Send(responseData, responseData.Length, clientEndPoint);
             }
         }
     }
