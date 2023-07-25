@@ -18,6 +18,12 @@ public class Client
 
             byte[] data = Encoding.ASCII.GetBytes(input);
             client.Send(data, data.Length, serverIP.ToString(), serverPort);
+
+            IPEndPoint serverEndPoint = new IPEndPoint(serverIP, serverPort);
+            byte[] receivedData = client.Receive(ref serverEndPoint);
+
+            string modifiedData = Encoding.ASCII.GetString(receivedData);
+            Console.WriteLine("Modified data: " + modifiedData);
         }
     }
 }
