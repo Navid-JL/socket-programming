@@ -6,12 +6,12 @@ This repository contains code examples and assignments for the book 'Computer Ne
 
 **UDP**
 
--   [ ] The client reads a line of characters (data) from its keyboard and sends the data
-        to the server.
--   [ ] The server receives the data and converts the characters to uppercase.
--   [ ] The server sends the modified data to the client.
--   [ ] The client receives the modified data and displays the line on its screen.
-
 ### In Progress
 
 ### Done ✓
+
+-   [x] The client reads a line of characters (data) from its keyboard and sends the data
+        to the server.
+-   [x] The server receives the data and converts the characters to uppercase.
+-   [x] The server sends the modified data to the client.
+-   [x] The client receives the modified data and displays the line on its screen.
