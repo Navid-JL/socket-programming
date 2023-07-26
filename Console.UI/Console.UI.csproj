@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UDP.Library\UDP.Library.csproj" />
+    <ProjectReference Include="..\TCP.Library\TCP.Library.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
